@@ -4,8 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Preview</title>
+    <style>
+        body{
+            background: #a2e1c6;
+        }
+        .product-img-container{
+            display: flex;
+            justify-content: center;
+        }
+
+        #main-img{
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+            border: 1 px solid;
+            border-radius: 20px;
+            box-shadow:0px 0px 10px 0px  ;
+            margin: 20px auto;
+            display: block;
+            
+
+        }
+        .product-img{
+            height: 70px;
+            width: 70px;
+            object-fit: cover;
+            border: 1px solid black;
+            border-radius: 10px;
+            margin: 10px;
+            cursor: pointer;
+
+        }
+    </style>
+
 </head>
 <body>
-    
+    <img src="./img1.jpeg" id="main-img"/>
+    <div class="product-img-container">
+        <img src="./img1.jpeg"  class="product-img" onclick="changeImage(1)">
+        <img src="./img2.jpeg"  class="product-img" onclick="changeImage(2)">
+        <img src="./img3.jpeg"  class="product-img" onclick="changeImage(3)">
+        <img src="./img4.jpeg"  class="product-img" onclick="changeImage(4)">
+        <img src="./img5.avif"  class="product-img" onclick="changeImage(5)">
+
+    </div>
+  
 </body>
 </html>
