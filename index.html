@@ -6,19 +6,19 @@
     <title>Product Preview</title>
     <style>
         body{
-            background: #b0c6bc;
+            background: linear-gradient(pink, red, yellow);
         }
         .product-img-container{
             display: flex;
             justify-content: center;
-            background-color: #90e8c1;
+          
         }
 
         #main-img{
-            width: 400px;
-            height: 400px;
+            width: 300px;
+            height: 300px;
             background-color: #cbd3d0;
-            object-fit: cover;
+            object-fit: fill;
             border: 1 px solid;
             border-radius: 20px;
             box-shadow:0px 0px 10px 0px  ;
@@ -30,24 +30,35 @@
         .product-img{
             height: 70px;
             width: 70px;
-            object-fit: cover;
+            object-fit: fill;
             border: 1px solid black;
+        
             border-radius: 10px;
             margin: 10px;
             cursor: pointer;
+
+        }
+        .product-img:hover{
+            box-shadow: 10px 10px 10px 1px;
+            transform: scale(1.1);
+            transition: 0.2s;
+        }
+        h1{
+            text-align: center;
 
         }
     </style>
 
 </head>
 <body>
+    <h1>View Mobiles Products</h1>
     <img src="./images/freestocks-L5DxWLmywmM-unsplash.jpg" id="main-img"/>
     <div class="product-img-container">
-        <img src="./images/freestocks-L5DxWLmywmM-unsplash.jpg"  class="product-img" onclick="changeImage(1)">
-        <img src="./images/william-hook-9e9PD9blAto-unsplash.jpg"  class="product-img" onclick="changeImage(2)">
-        <img src="./images/priscilla-du-preez-tBypczR1CFI-unsplash.jpg"  class="product-img" onclick="changeImage(3)">
-        <img src="./images/william-hook-9e9PD9blAto-unsplash (1).jpg"  class="product-img" onclick="changeImage(4)">
-        <img src="./images/priscilla-du-preez-BOUdudmAnk4-unsplash.jpg"  class="product-img" onclick="changeImage(5)">
+        <img src="./images/freestocks-L5DxWLmywmM-unsplash.jpg"  class="product-img" onmousemove="changeImage(1)">
+        <img src="./images/william-hook-9e9PD9blAto-unsplash.jpg"  class="product-img" onmousemove="changeImage(2)">
+        <img src="./images/priscilla-du-preez-tBypczR1CFI-unsplash.jpg"  class="product-img" onmousemove="changeImage(3)">
+        <img src="./images/william-hook-9e9PD9blAto-unsplash (1).jpg"  class="product-img" onmousemove="changeImage(4)">
+        <img src="./images/priscilla-du-preez-BOUdudmAnk4-unsplash.jpg"  class="product-img" onmousemove="changeImage(5)">
 
     </div>
   <script src="./index.js">  
